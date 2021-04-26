@@ -5,6 +5,28 @@
     <title>Payment checkout form UI</title>
 </head>
 <body style="background-color: orange;" >
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 <img width="350" height="250" src="https://images.dailyhive.com/20200107152300/52057146_774296726286494_6084927626781349160_n.jpg" alt="image not found" />
 <img width="350" height="250" src="https://cdn.pixabay.com/photo/2019/01/29/18/05/burger-3962996__340.jpg" alt="image not found" />
 <img width="299" height="250" src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395__340.jpg" alt="image not found" />
@@ -39,6 +61,12 @@
     </div>
 </div>
 
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
 </body>
 </html>  
       
